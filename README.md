@@ -1,4 +1,4 @@
-# 顶级免费Clash - 6月5日22.6M/S|免费V2ray/Shadowrocket/SSR/Clash订阅节点分享  更新时间 2025-06-05 09:27:00
+# 顶级免费Clash - 6月9日19.3M/S|免费Clash/Shadowrocket/V2ray/SSR订阅节点分享  更新时间 2025-06-09 08:52:29
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://clashbest.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://clashbest.github.io/uploads/2025/06/0-20250605.yaml
-- https://clashbest.github.io/uploads/2025/06/1-20250605.yaml
-- https://clashbest.github.io/uploads/2025/06/2-20250605.yaml
-- https://clashbest.github.io/uploads/2025/06/3-20250605.yaml
-- https://clashbest.github.io/uploads/2025/06/4-20250605.yaml
+- https://clashbest.github.io/uploads/2025/06/0-20250609.yaml
+- https://clashbest.github.io/uploads/2025/06/1-20250609.yaml
+- https://clashbest.github.io/uploads/2025/06/2-20250609.yaml
+- https://clashbest.github.io/uploads/2025/06/3-20250609.yaml
+- https://clashbest.github.io/uploads/2025/06/4-20250609.yaml
 
 ### V2ray订阅链接
 
-- https://clashbest.github.io/uploads/2025/06/0-20250605.txt
-- https://clashbest.github.io/uploads/2025/06/1-20250605.txt
-- https://clashbest.github.io/uploads/2025/06/2-20250605.txt
-- https://clashbest.github.io/uploads/2025/06/3-20250605.txt
-- https://clashbest.github.io/uploads/2025/06/4-20250605.txt
+- https://clashbest.github.io/uploads/2025/06/0-20250609.txt
+- https://clashbest.github.io/uploads/2025/06/1-20250609.txt
+- https://clashbest.github.io/uploads/2025/06/2-20250609.txt
+- https://clashbest.github.io/uploads/2025/06/3-20250609.txt
+- https://clashbest.github.io/uploads/2025/06/4-20250609.txt
 
 ### Sing-box订阅链接
 
-- https://clashbest.github.io/uploads/2025/06/20250605.json
+- https://clashbest.github.io/uploads/2025/06/20250609.json
 
 ## 更多clash节点订阅 ：
 
