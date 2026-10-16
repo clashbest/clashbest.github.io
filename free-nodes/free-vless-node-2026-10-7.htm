@@ -247,9 +247,9 @@ A：将继续向数字领域扩展，与NFT、虚拟时尚、AI设计等科技�
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的混淆方式选择有什么讲究？</h5></div>
+    <div class="panel-heading"><h5>VLESS 是否比 Trojan 更稳定？</h5></div>
     <div class="panel-body">
-        混淆方式决定流量伪装特性，不同方式适应不同封锁环境。常用方式如 tls1.2_ticket_auth 模拟 HTTPS，http_simple 模拟 HTTP 请求，根据环境选择可提高抗封锁能力。<hr />    </div>
+        两者都非常稳定，但 VLESS 在多平台兼容性上略优，而 Trojan 在 HTTPS 伪装和 TLS 安全性上更强。选择取决于服务器环境与具体需求，两者皆为高性能协议。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>如何配置 Clash 以支持局域网内设备共享代理？</h5></div>
@@ -257,14 +257,9 @@ A：将继续向数字领域扩展，与NFT、虚拟时尚、AI设计等科技�
         启用 Clash 的 HTTP/SOCKS5 本地监听并在局域网设备上设置该代理地址为网关；若使用 TUN 模式需配合路由器或透明代理实现全局共享，注意开启访问控制避免未经授权的外部访问。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何识别节点是否被封锁或限速？</h5></div>
+    <div class="panel-heading"><h5>VLESS + XTLS 模式适合移动网络吗？</h5></div>
     <div class="panel-body">
-        通过对比不同节点的 speedtest、ping、下载测速以及 traceroute 路由变化来判断；若多个节点同时异常可能是本地网络问题，单个节点异常则可能被封锁或运营商限速，应尝试更换端口或传输方式。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 的分流规则如何实现广告拦截？</h5></div>
-    <div class="panel-body">
-        通过配置规则，将广告域名或请求路径匹配到黑名单策略，使请求直接阻断或重定向到本地地址。这样用户浏览网页或使用应用时可自动屏蔽大部分广告内容。<hr />    </div>
+        XTLS 模式降低加密开销，减少握手次数，适合高延迟或不稳定移动网络。结合策略组和多出口节点，可提升访问速度和连接稳定性，确保用户体验流畅。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 如何结合延迟选择最优节点？</h5></div>
@@ -272,29 +267,34 @@ A：将继续向数字领域扩展，与NFT、虚拟时尚、AI设计等科技�
         PassWall2 定期测速节点延迟，并结合策略组自动选择延迟最低的节点。无需手动操作即可保证网页、视频和游戏流量快速稳定访问，提高整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>如何识别节点是否被封锁或限速？</h5></div>
+    <div class="panel-body">
+        通过对比不同节点的 speedtest、ping、下载测速以及 traceroute 路由变化来判断；若多个节点同时异常可能是本地网络问题，单个节点异常则可能被封锁或运营商限速，应尝试更换端口或传输方式。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>如何导入 Clash 订阅链接？</h5></div>
     <div class="panel-body">
         打开 Clash 客户端，进入 Profiles（配置文件）页面，粘贴提供的订阅链接并点击下载。Clash 会自动更新节点列表，用户可在 Profiles 中选择对应配置启用，从而快速切换不同代理线路。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 如何实现 UDP 游戏加速？</h5></div>
+    <div class="panel-heading"><h5>Shadowrocket 的分流规则如何实现广告拦截？</h5></div>
     <div class="panel-body">
-        Netch 支持 UDP 转发，可专门为游戏流量建立高速通道。结合策略组和节点延迟检测，可有效减少丢包和延迟，提高游戏体验的流畅性和稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + XTLS 模式适合移动网络吗？</h5></div>
-    <div class="panel-body">
-        XTLS 模式降低加密开销，减少握手次数，适合高延迟或不稳定移动网络。结合策略组和多出口节点，可提升访问速度和连接稳定性，确保用户体验流畅。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS 是否比 Trojan 更稳定？</h5></div>
-    <div class="panel-body">
-        两者都非常稳定，但 VLESS 在多平台兼容性上略优，而 Trojan 在 HTTPS 伪装和 TLS 安全性上更强。选择取决于服务器环境与具体需求，两者皆为高性能协议。<hr />    </div>
+        通过配置规则，将广告域名或请求路径匹配到黑名单策略，使请求直接阻断或重定向到本地地址。这样用户浏览网页或使用应用时可自动屏蔽大部分广告内容。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VMess 协议的动态端口功能是什么？</h5></div>
     <div class="panel-body">
-        VMess 支持动态端口（port hopping）功能，能在一定范围内自动变更通信端口。此机制可有效防止防火墙基于端口的封锁策略，提高节点长期稳定性。    </div>
+        VMess 支持动态端口（port hopping）功能，能在一定范围内自动变更通信端口。此机制可有效防止防火墙基于端口的封锁策略，提高节点长期稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 的混淆方式选择有什么讲究？</h5></div>
+    <div class="panel-body">
+        混淆方式决定流量伪装特性，不同方式适应不同封锁环境。常用方式如 tls1.2_ticket_auth 模拟 HTTPS，http_simple 模拟 HTTP 请求，根据环境选择可提高抗封锁能力。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Netch 如何实现 UDP 游戏加速？</h5></div>
+    <div class="panel-body">
+        Netch 支持 UDP 转发，可专门为游戏流量建立高速通道。结合策略组和节点延迟检测，可有效减少丢包和延迟，提高游戏体验的流畅性和稳定性。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -342,16 +342,16 @@ A：将继续向数字领域扩展，与NFT、虚拟时尚、AI设计等科技�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/today-vless-node-2026-9-11.htm" title="顶级免费Clash - 9月11日21.9M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/SSR节点订阅节点分享">顶级免费Clash - 9月11日21.9M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vless-github-2026-10-1.htm" title="顶级免费Clash - 10月1日19.9M/S|免费SSR节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/Trojan节点订阅节点分享">顶级免费Clash - 10月1日19.9M/S|免费SSR节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/Trojan节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-6-latest-vless-node.htm" title="顶级免费Clash - 9月6日18.3M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Trojan节点/Clash节点订阅节点分享">顶级免费Clash - 9月6日18.3M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Trojan节点/Clash节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-16-free-node-subscribe.htm" title="顶级免费Clash - 9月16日18.7M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点订阅节点分享">顶级免费Clash - 9月16日18.7M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-28-vless-windows.htm" title="顶级免费Clash - 9月28日21M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Trojan节点订阅节点分享">顶级免费Clash - 9月28日21M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Trojan节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vless-node-2026-9-15.htm" title="顶级免费Clash - 9月15日18.4M/S|免费V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点分享">顶级免费Clash - 9月15日18.4M/S|免费V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-2-vless-node-github.htm" title="顶级免费Clash - 10月2日19.1M/S|免费Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点订阅节点分享">顶级免费Clash - 10月2日19.1M/S|免费Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-22-vless-node-github.htm" title="顶级免费Clash - 9月22日22.3M/S|免费V2ray节点/Clash节点/Trojan节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享">顶级免费Clash - 9月22日22.3M/S|免费V2ray节点/Clash节点/Trojan节点/Singbox节点/SSR节点/Shadowrocket节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-29.htm" title="顶级免费Clash - 9月29日20.3M/S|免费Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Singbox节点订阅节点分享">顶级免费Clash - 9月29日20.3M/S|免费Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Singbox节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-10-3.htm" title="顶级免费Clash - 10月3日21.6M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/Clash节点/SSR节点/Singbox节点订阅节点分享">顶级免费Clash - 10月3日21.6M/S|免费Shadowrocket节点/Trojan节点/V2ray节点/Clash节点/SSR节点/Singbox节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/today-vless-node-2026-9-5.htm" title="顶级免费Clash - 9月5日19.9M/S|免费Trojan节点/Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点分享">顶级免费Clash - 9月5日19.9M/S|免费Trojan节点/Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-4-vless-node-share.htm" title="顶级免费Clash - 10月4日20.7M/S|免费SSR节点/V2ray节点/Clash节点/Trojan节点/Singbox节点/Shadowrocket节点订阅节点分享">顶级免费Clash - 10月4日20.7M/S|免费SSR节点/V2ray节点/Clash节点/Trojan节点/Singbox节点/Shadowrocket节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-8-vless-node-share.htm" title="顶级免费Clash - 10月8日21.1M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点订阅节点分享">顶级免费Clash - 10月8日21.1M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点订阅节点分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-9-18-vless-node-github.htm" title="顶级免费Clash - 9月18日18M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Trojan节点/Shadowrocket节点订阅节点分享">顶级免费Clash - 9月18日18M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Trojan节点/Shadowrocket节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-4-vless-windows.htm" title="顶级免费Clash - 9月4日19.8M/S|免费Clash节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点分享">顶级免费Clash - 9月4日19.8M/S|免费Clash节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vless-node-2026-10-13.htm" title="顶级免费Clash - 10月13日19.7M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点订阅节点分享">顶级免费Clash - 10月13日19.7M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/vless-github-2026-9-13.htm" title="顶级免费Clash - 9月13日19.9M/S|免费Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Trojan节点/Singbox节点订阅节点分享">顶级免费Clash - 9月13日19.9M/S|免费Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Trojan节点/Singbox节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/vless-node-2026-9-15.htm" title="顶级免费Clash - 9月15日18.4M/S|免费V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点分享">顶级免费Clash - 9月15日18.4M/S|免费V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-16-free-node-subscribe.htm" title="顶级免费Clash - 9月16日18.7M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点订阅节点分享">顶级免费Clash - 9月16日18.7M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Trojan节点/Shadowrocket节点订阅节点分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -363,7 +363,7 @@ A：将继续向数字领域扩展，与NFT、虚拟时尚、AI设计等科技�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">8</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">15</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>

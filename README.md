@@ -1,4 +1,4 @@
-# 顶级免费Clash - 10月8日18.2M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点订阅节点分享  更新时间 2026-10-08 10:28:11
+# 顶级免费Clash - 10月16日22.5M/S|免费V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点分享  更新时间 2026-10-16 09:41:48
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://clashbest.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://clashbest.github.io/uploads/2026/10/0-20261008.yaml
-- https://clashbest.github.io/uploads/2026/10/1-20261008.yaml
-- https://clashbest.github.io/uploads/2026/10/2-20261008.yaml
-- https://clashbest.github.io/uploads/2026/10/3-20261008.yaml
-- https://clashbest.github.io/uploads/2026/10/4-20261008.yaml
+- https://clashbest.github.io/uploads/2026/10/0-20261016.yaml
+- https://clashbest.github.io/uploads/2026/10/1-20261016.yaml
+- https://clashbest.github.io/uploads/2026/10/2-20261016.yaml
+- https://clashbest.github.io/uploads/2026/10/3-20261016.yaml
+- https://clashbest.github.io/uploads/2026/10/4-20261016.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://clashbest.github.io/uploads/2026/10/0-20261008.txt
-- https://clashbest.github.io/uploads/2026/10/1-20261008.txt
-- https://clashbest.github.io/uploads/2026/10/2-20261008.txt
-- https://clashbest.github.io/uploads/2026/10/3-20261008.txt
-- https://clashbest.github.io/uploads/2026/10/4-20261008.txt
+- https://clashbest.github.io/uploads/2026/10/0-20261016.txt
+- https://clashbest.github.io/uploads/2026/10/1-20261016.txt
+- https://clashbest.github.io/uploads/2026/10/2-20261016.txt
+- https://clashbest.github.io/uploads/2026/10/3-20261016.txt
+- https://clashbest.github.io/uploads/2026/10/4-20261016.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://clashbest.github.io/uploads/2026/10/20261008.json
+- https://clashbest.github.io/uploads/2026/10/20261016.json
 
 ## 更多Clash节点订阅 ：
 
